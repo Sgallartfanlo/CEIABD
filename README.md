@@ -52,20 +52,6 @@ El pla d'estudis està estructurat en els mòduls següents:
 
 ---
 
-## 🚀 Instruccions d'Ús
-
-1. **Clonar el repositori:**
-```bash
-git clone [https://github.com/el-teu-usuari/nom-del-repositori.git](https://github.com/el-teu-usuari/nom-del-repositori.git)
-
-```
-
-
-2. Navega a la carpeta del mòdul desitjat per accedir als exercicis i projectes corresponents.
-3. Consulta els fitxers `README.md` específics dins de cada directori si requereixen dependències addicionals.
-
----
-
 ## 👤 Autor
 
 * **Estudiant:** Sergi Gallart Fanlo
