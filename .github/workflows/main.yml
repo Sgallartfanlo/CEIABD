@@ -3,6 +3,9 @@ name: Crear Estructura de Curs
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate-folders:
     runs-on: ubuntu-latest
