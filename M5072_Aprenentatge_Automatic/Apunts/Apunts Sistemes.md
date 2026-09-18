@@ -66,7 +66,7 @@
  |
 | **Programació** | Programada per humans
 
- | S'autoprograma i apron contínuament
+ | S'autoprograma i aprèn contínuament
 
  |
 
@@ -128,7 +128,7 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 * **Regressió:** Prediu un valor numèric continu (ex. *Preu d'un habitatge*, *Vendes*).
 
 
-* *Algorismes:* Regressió Lineal/Logística, kNN, SVM, Arbres de Decisió, Random Forest, Naive Bayes, Xarxes Neuronals.
+* **Algorismes principals:** Regressió Lineal/Logística, kNN, SVM, Arbres de Decisió, Random Forest, Naive Bayes, Xarxes Neuronals.
 
 
 
@@ -139,7 +139,7 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 * **Agrupament (*Clustering*):** Agrupa dades similars (Ex. *K-Means, Fuzzy K-Means, GMM, DBSCAN, Clustering Jeràrquic*).
 
 
-* **Reducció de Dimensionalitat:** Redueix el nombre de característiques mantinguent la informació essencial (Ex. *PCA, t-SNE, Factor Analysis*).
+* **Reducció de Dimensionalitat:** Redueix el nombre de característiques mantenint la informació essencial (Ex. *PCA, t-SNE, Factor Analysis*).
 
 
 * **Detecció d'Anomalies:** Identifica valors atípics o *outliers* (Ex. *One-Class SVM, Isolation Forest*).
@@ -185,7 +185,7 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 * **Dades desbalancejades:** Una classe és molt més freqüent que una altra.
 
 
-* *Solucions:* Down-sampling (eliminar dades de la majoritària), Over-sampling/SMOTE (generar dades sintètiques de la minoritària) o Matrius de Cost (penalitzar errors).
+* *Solucions:* Down-sampling (eliminar dades de la classe majoritària), Over-sampling/SMOTE (generar dades sintètiques de la minoritària) o Matrius de Cost (penalitzar errors).
 
 
 
@@ -199,7 +199,7 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 
 ### Validació i Cross-Validation
 
-* Per avaluar si el model generalitza bé, es fan servir conjunt de Train i Test.
+* Per avaluar si el model generalitza bé, es fan servir conjunts separats de *Train* i *Test*.
 
 
 * **K-Fold Cross-Validation:** Es divideixen les dades en $K$ parts (folds). En cada iteració, s'utilitzen $K-1$ folds per entrenar i $1$ per validar, fent la mitjana dels resultats al final per obtenir un rendiment més robust.
@@ -210,7 +210,7 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 
 ## 6. Cicle de Vida d'un Projecte de ML i Rols
 
-**Fases principals:**
+### Fases principals
 
 1. Definició del problema i anàlisi de negoci.
 
@@ -225,7 +225,20 @@ Definit per **Arthur Samuel (1959)** com la capacitat dels ordinadors d'aprendre
 
 
 
-**Rols a l'equip:** *Data Scientist*, *ML Engineer*, *Data Analyst*, *ML Software Engineer*, *Software Engineer*, *ML Researcher*.
+### Rols a l'equip
+
+* *Data Scientist*
+
+* *ML Engineer*
+
+* *Data Analyst*
+
+* *ML Software Engineer*
+
+* *Software Engineer*
+
+* *ML Researcher*
+
 
 ---
 
@@ -243,11 +256,11 @@ Fase essencial (aproximadament el 30% del temps) per conèixer distribucions, co
 * **Standard Scaler (Z-score):** Centra les dades amb mitjana 0 i desviació estàndard 1 ($z = \frac{x - \mu}{\sigma}$).
 
 
-* **Normalizer:** Esbala vectors individualment per fila perquè la seva norma sigui 1 (útil en processament de text/TF-IDF).
+* **Normalizer:** Escala vectors individualment per fila perquè la seva norma sigui 1 (útil en processament de text/TF-IDF).
 
 
 
-### Transformacions No Lineals (Sí modifiquen la distribució / Skewness)
+### Transformacions No Lineals (Modifiquen la distribució / Asimetria)
 
 * **Logarithmic Transform (`np.log1p`):** Utilitzat per reduir l'asimetria en dades amb cues llargues (Ex. *ingressos*).
 
@@ -255,17 +268,17 @@ Fase essencial (aproximadament el 30% del temps) per conèixer distribucions, co
 * **Power Transformer (Yeo-Johnson / Box-Cox):** Transforma les dades perquè s'ajustin a una distribució gaussiana o normal.
 
 
-* **Quantile Transformer:** Mapeja les dades a una distribució uniforme o normal basant-se en percentils; resistent a *outliers*.
+* **Quantile Transformer:** Mapeja les dades a una distribució uniforme o normal basant-se en percentils; és molt resistent als *outliers*.
 
 
 
-> **Data Leakage (Fuita de dades):** Cal aplicar SEMPRE les transformacions i escalats sobre el conjunt de *Train* (`fit_transform`) i posteriorment aplicar-les al conjunt de *Test* (`transform`) sense tornar a aprendre. Es recomana utilitzar els **Pipelines de Scikit-learn**.
+> **Data Leakage (Fuita de dades):** Cal aplicar SEMPRE les transformacions i escalats sobre el conjunt de *Train* (`fit_transform`) i posteriorment aplicar-les al conjunt de *Test* (`transform`) sense tornar a aprendre la informació. Es recomana utilitzar els **Pipelines de Scikit-learn**.
 > 
 > 
 
 ### Codificació de Variables Categòriques
 
-* **One-Hot Encoding:** Crea una columna binària (0/1) per a cada categoria. Ideal quan no hi ha ordre natural.
+* **One-Hot Encoding:** Crea una columna binària (0/1) per a cada categoria. Ideal quan no hi ha un ordre natural entre elles.
 
 
 * **Ordinal Encoding:** Assigna enters segons un ordre jeràrquic establert (Ex. *S, M, L*).
