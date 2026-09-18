@@ -1,7 +1,3 @@
-Aquí tens el resum complet integrat de la unitat **NF1 - Introducció a l'Aprenentatge Automàtic (Machine Learning)** sense taules Markdown per evitar qualsevol problema a l'hora de copiar i enganxar:
-
----
-
 # NF1: Introducció a l'Aprenentatge Automàtic (Machine Learning)
 
 ## 1. Aspectes Generals i Història de la IA
