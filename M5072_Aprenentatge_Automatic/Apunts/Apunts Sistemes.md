@@ -1,3 +1,7 @@
+Aquí tens el resum complet integrat de la unitat **NF1 - Introducció a l'Aprenentatge Automàtic (Machine Learning)** sense taules Markdown per evitar qualsevol problema a l'hora de copiar i enganxar:
+
+---
+
 # NF1: Introducció a l'Aprenentatge Automàtic (Machine Learning)
 
 ## 1. Aspectes Generals i Història de la IA
@@ -47,28 +51,38 @@
 
 **Objectius principals de la IA:** Deducció, raonament, representació del coneixement, planificació, NLP, aprenentatge, percepció i manipulació.
 
-| Característica | IA Feble / Específica (ANI) | IA Forta / General (AGI) |
-| --- | --- | --- |
-| **Estat real** | Existeix actualment
+### Comparativa de Tipus d'IA
 
- | Només en ciència-ficció
+* **IA Feble / Específica (ANI):**
+* **Estat real:** Existeix actualment.
 
- |
-| **Focus** | Tasques concretes i limitades (ex. Siri, AlphaGo)
 
- | Problemes oberts, capacitats humanes generals
+* **Focus:** Tasques concretes i limitades (ex. Siri, AlphaGo).
 
- |
-| **Comportament** | Reactiu, computa sense raonar
 
- | Proactiu, imita el pensament humà
+* **Comportament:** Reactiu, computa sense raonar.
 
- |
-| **Programació** | Programada per humans
 
- | S'autoprograma i aprèn contínuament
+* **Programació:** Programada per humans.
 
- |
+
+
+
+* **IA Forta / General (AGI):**
+* **Estat real:** Només en ciència-ficció.
+
+
+* **Focus:** Problemes oberts, capacitats humanes generals.
+
+
+* **Comportament:** Proactiu, imita el pensament humà.
+
+
+* **Programació:** S'autoprograma i aprèn contínuament.
+
+
+
+
 
 ### IA vs. Machine Learning vs. Deep Learning
 
