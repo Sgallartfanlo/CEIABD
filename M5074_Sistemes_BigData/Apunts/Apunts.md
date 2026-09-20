@@ -40,42 +40,49 @@ Aquest dipòsit conté els apunts estructurats i resums del mòdul **M5074**, co
 
 #### B. Segons la Naturalesa (Quantitatives vs. Qualitatives)
 
+```mermaid
+graph TD
+    Dades[DADES] --> Quant[Quantitatives / Numèriques]
+    Dades --> Qual[Qualitatives / Categòriques]
 
-```
+    Quant --> Discretes[Discretes]
+    Quant --> Continues[Contínues]
 
-```
-                          DADES
-                            │
-    ┌───────────────────────┴───────────────────────┐
+    Continues --> Interval[D'Interval]
+    Continues --> Ratio[De Ràtio]
 
-```
-
-Quantitatives (Numèriques)               Qualitatives (Categòriques)
-│                                               │
-┌────┴───────────┐                              ┌────┴───────────┐
-Discretes      Contínues                        Nominals        Ordinals
-│
-┌───────┴───────┐
-Interval          Ràtio
+    Qual --> Nominals[Nominals]
+    Qual --> Ordinals[Ordinals]
 
 ```
 
 1. **Dades Quantitatives** (Numèriques i mesurables):
-   * **Discretes**: Valors enters i comptables (ex. número d'estudiants en una aula).
-   * **Contínues**: Valors dins d'un rang continu, poden incloure decimals (ex. alçada, angles).
-     * *D'Interval*: Tenen una escala amb punts equidistants però **sense zero absolut** (ex. temperatura en °C o °F; 0°C no vol dir "absència de temperatura").
-     * *De Ràtio*: Inclouen un **zero absolut** que representa l'absència real de la propietat mesurada (ex. mesura d'alçada o temps des de zero).
+* **Discretes**: Valors enters i comptables (ex. número d'estudiants en una aula).
+* **Contínues**: Valors dins d'un rang continu, poden incloure decimals (ex. alçada, angles).
+* *D'Interval*: Tenen una escala amb punts equidistants però **sense zero absolut** (ex. temperatura en °C o °F; 0°C no vol dir "absència de temperatura").
+* *De Ràtio*: Inclouen un **zero absolut** que representa l'absència real de la propietat mesurada (ex. mesura d'alçada o temps des de zero).
+
+
+
+
 2. **Dades Qualitatives** (Descriptives i no numèriques):
-   * **Nominals**: Categories sense ordre natural (ex. color dels ulls, gènere).
-   * **Ordinals**: Categories amb un ordre o escala lògica (ex. nivells de satisfacció: "molt d'acord", "d'acord", "en desacord").
+* **Nominals**: Categories sense ordre natural (ex. color dels ulls, gènere).
+* **Ordinals**: Categories amb un ordre o escala lògica (ex. nivells de satisfacció: "molt d'acord", "d'acord", "en desacord").
+
+
 
 #### C. Segons la Structura (Estructurades vs. No Estructurades)
+
 * **Dades Estructurades**: Formats definits (taules, bases de dades relacionals, fulls de càlcul).
-  * *Exemples*: Historial de transaccions, dates, números de compte.
-  * *Pro/Contres*: Molt fàcils de consultar i analitzar, però poc flexibles davant canvis de requisits.
+* *Exemples*: Historial de transaccions, dates, números de compte.
+* *Pro/Contres*: Molt fàcils de consultar i analitzar, però poc flexibles davant canvis de requisits.
+
+
 * **Dades No Estructurades**: Sense model predefinit.
-  * *Exemples*: Fitxers d'àudio, vídeos de seguretat, imatges, publicacions en xarxes socials.
-  * *Pro/Contres*: Aporten informació rica i complexa, però requereixen eines avançades d'IA i emmagatzematge especialitzat per processar-les.
+* *Exemples*: Fitxers d'àudio, vídeos de seguretat, imatges, publicacions en xarxes socials.
+* *Pro/Contres*: Aporten informació rica i complexa, però requereixen eines avançades d'IA i emmagatzematge especialitzat per processar-les.
+
+
 
 ---
 
@@ -84,22 +91,28 @@ Interval          Ràtio
 ### 2.1. Dades Internes vs. Externes
 
 * **Dades Internes (Primàries)**: Generades dins la pròpia organització.
-  * *Tipus*: Financeres, de vendes, clients, operacions, empleats, màrqueting i comunicació.
-  * *Avantatges*: Altament rellevants, confidencials, segures, d'accés ràpid i sota control propi de qualitat.
+* *Tipus*: Financeres, de vendes, clients, operacions, empleats, màrqueting i comunicació.
+* *Avantatges*: Altament rellevants, confidencials, segures, d'accés ràpid i sota control propi de qualitat.
+
+
 * **Dades Externes (Secundàries)**: Procedents de fora de l'organització.
-  * *Tipus*: Públiques (dades obertes de governs), de tercers (data brokers), sindicades o d'associació/col·laboració.
-  * *Avantatges*: Visibilitat del mercat, benchmark amb la competència, innovació i reducció de costos d'estudi.
+* *Tipus*: Públiques (dades obertes de governs), de tercers (data brokers), sindicades o d'associació/col·laboració.
+* *Avantatges*: Visibilitat del mercat, benchmark amb la competència, innovació i reducció de costos d'estudi.
+
+
 
 ---
 
 ### 2.2. Mètodes de Recollida de Dades
 
 #### A. Recollida Manual
+
 * **Enquestes**: Formularis estructurats per analitzar patrons en mostres representatives.
 * **Entrevistes**: Converses a fons per obtenir insights qualificats.
 * **Observació**: Registre directe del comportament en un entorn real.
 
 #### B. Recollida Automatitzada (Instrumentació)
+
 1. **Monitoratge continu**: Captura ininterrompuda de dades (ex. sensors de temperatura/pressió en fàbriques).
 2. **Monitoratge d'intervals**: Captura en franges horàries programades per reduir costos (ex. videovigilància de 1:00 a 5:00).
 3. **Basat en esdeveniments**: S'activa únicament quan succeeix una desviació o disparador (ex. detecció de frau bancari per pagament inusual).
@@ -118,29 +131,38 @@ Interval          Ràtio
 ## 3. Ciència de Dades i Metodologies
 
 ### 3.1. Definició i Mètode
+
 La **Ciència de Dades** combina el mètode científic, les matemàtiques/estadística, la programació avançada, la Intel·ligència Artificial i la narració de dades (*data storytelling*) per extreure informació i valor oculta.
+
 * **Tècnica clau (Els 5 Per què)**: Formulació iterativa d'aquesta pregunta per trobar la causa arrel d'un problema de negoci o tècnic.
 
 ---
 
 ### 3.2. Metodologies Clàssiques de Data Mining
 
+```mermaid
+graph TD
+    subgraph CRISP_DM ["CRISP-DM (Business First)"]
+        C1[1. Business Understanding] --> C2[2. Data Understanding]
+        C2 --> C3[3. Data Preparation]
+        C3 --> C4[4. Modeling]
+        C4 --> C5[5. Evaluation]
+        C5 --> C6[6. Deployment]
+    end
 
-```
+    subgraph KDD ["KDD (Data Refining)"]
+        K1[1. Selecció] --> K2[2. Preprocessament]
+        K2 --> K3[3. Transformació]
+        K3 --> K4[4. Mineria de dades]
+        K4 --> K5[5. Interpretació i Avaluació]
+    end
 
-+-------------------------------------------------------------------------+
-|                              METODOLOGIES                               |
-+-------------------+-------------------------------+---------------------+
-|     CRISP-DM      |              KDD              |        SEMMA        |
-|  (Business First) |   (Data Refining Process)     |  (Model Focused)    |
-+-------------------+-------------------------------+---------------------+
-| 1. Business Und.  | 1. Selecció                   | 1. Sample (Mostra)  |
-| 2. Data Und.      | 2. Preprocessament            | 2. Explore          |
-| 3. Data Prep.     | 3. Transformació              | 3. Modify           |
-| 4. Modeling       | 4. Mineria de dades           | 4. Model            |
-| 5. Evaluation     | 5. Interpretació i avaluació  | 5. Assess (Avaluar) |
-| 6. Deployment     |                               |                     |
-+-------------------+-------------------------------+---------------------+
+    subgraph SEMMA ["SEMMA (Model Focused)"]
+        S1[1. Sample] --> S2[2. Explore]
+        S2 --> S3[3. Modify]
+        S3 --> S4[4. Model]
+        S4 --> S5[5. Assess]
+    end
 
 ```
 
@@ -157,8 +179,10 @@ La **Ciència de Dades** combina el mètode científic, les matemàtiques/estad�
 3. **Representació i Transformació de Dades**: Utilització d'estadística descriptiva i transformació de dades no estructurades a valors numèrics (0 i 1, tokenització, normalització).
 4. **Visualització i Presentació de Dades**: Creació de gràfics impactants i narratius per validar hipòtesis i comunicar resultats.
 5. **Models de Dades (Entrenament de ML)**:
-   * **Aprenentatge Supervisat**: Algorismes entrenats amb dades etiquetades (ex. classificació, detecció de frau, regressió).
-   * **Aprenentatge No Supervisat**: Troba patrons en dades sense etiquetar (ex. agrupament/clustering, sistemes de recomanació, segmentació de clients).
+* **Aprenentatge Supervisat**: Algorismes entrenats amb dades etiquetades (ex. classificació, detecció de frau, regressió).
+* **Aprenentatge No Supervisat**: Troba patrons en dades sense etiquetar (ex. agrupament/clustering, sistemes de recomanació, segmentació de clients).
+
+
 6. **Implementació de Models**: Integració del model generat dins dels entorns de producció de l'empresa i el seu manteniment.
 
 ---
@@ -168,5 +192,7 @@ La **Ciència de Dades** combina el mètode científic, les matemàtiques/estad�
 * **Analista de Dades (Data Analyst)**: Recopila, organitza i analitza dades estructurades. Comunica resultats visualment.
 * **Científic de Dades (Data Scientist)**: Desenvolupa hipòtesis, treballa amb dades estructurades/no estructurades i entrena models d'Aprenentatge Automàtic.
 * **Enginyer de Dades (Data Engineer)**: Construeix i manté les canalitzacions (*pipelines*), la infraestructura de dades i implementa els models en producció.
+
+```
 
 ```
