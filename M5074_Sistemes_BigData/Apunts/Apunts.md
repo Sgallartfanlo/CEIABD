@@ -16,10 +16,15 @@ Aquest dipòsit conté els apunts estructurats i resums del mòdul **M5074**, co
 
 ### 1.2. Data Analysis vs. Data Analytics
 
-| Concepte | Enfocament | Temporalitats / Objectiu | Exemple |
-| :--- | :--- | :--- | :--- |
-| **Data Analysis** | Reactiu / Explicatiu | **Passat:** Examina, neteja i transforma dades per respondre preguntes específiques. | Analitzar les vendes passades d'entrades de cinema per trobar patrons de consum. |
-| **Data Analytics** | Proactiu / Predictiu | **Futur:** Aplica tècniques i processos per identificar tendències i fer prediccions contínues. | Utilitzar modelatge de dades per predir l'èxit de pel·lícules futures. |
+* **Data Analysis**
+  * **Enfocament:** Reactiu / Explicatiu
+  * **Temporalitats / Objectiu:** **Passat:** Examina, neteja i transforma dades per respondre preguntes específiques.
+  * **Exemple:** Analitzar les vendes passades d'entrades de cinema per trobar patrons de consum.
+
+* **Data Analytics**
+  * **Enfocament:** Proactiu / Predictiu
+  * **Temporalitats / Objectiu:** **Futur:** Aplica tècniques i processos per identificar tendències i fer prediccions contínues.
+  * **Exemple:** Utilitzar modelatge de dades per predir l'èxit de pel·lícules futures.
 
 ---
 
