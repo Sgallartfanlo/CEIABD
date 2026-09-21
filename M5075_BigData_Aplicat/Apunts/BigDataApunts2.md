@@ -1,6 +1,8 @@
+
 # Arquitectures de Big Data i Tractament de Dades
 
 **Mòdul M5075 – Big Data Aplicat**
+---
 
 ## 1. Introducció i Fonaments del Big Data
 
@@ -112,33 +114,41 @@ A l'hora de dissenyar entorns *Cloud*, s'apliquen els pilars recomanats pels pro
 
 ## 3. Tipus de Processament: Batch vs. Streaming
 
-| Característica | Processament Batch (Per lots) | Processament en Streaming |
-| --- | --- | --- |
-| **Definició** | Processament sobre un conjunt finit de dades amb inici i fi definit en el temps.
+### Processament Batch (Per lots)
 
- | Processament continu de dades a mesura que arriben, sense límit temporal.
+* **Definició:** Processament sobre un conjunt finit de dades amb inici i fi definit en el temps.
 
- |
-| **Volum / Àmbit** | Tot el conjunt de dades històric.
 
- | Finestres temporals o increments recents.
+* **Volum / Àmbit:** Tot el conjunt de dades històric.
 
- |
-| **Latència** | Alta (minuts, hores o dies).
 
- | Baixa (milisegons a segons).
+* **Latència:** Alta (minuts, hores o dies).
 
- |
-| **Precisió** | Màxima precisió (treballa sobre el 100% de la informació).
 
- | Ràpida resposta, possiblement amb algun sacrifici de precisió o context.
+* **Precisió:** Màxima precisió (treballa sobre el 100% de la informació).
 
- |
-| **Casos d'ús** | Informes de tancament diari, càlcul de nòmines, conversió de formats (.csv a Parquet).
 
- | Detecció de frau en temps real, alertes de sensors IoT, monitoratge d'usuaris actius.
+* **Casos d'ús:** Informes de tancament diari, càlcul de nòmines, conversió de formats (.csv a Parquet).
 
- |
+
+
+### Processament en Streaming
+
+* **Definició:** Processament continu de dades a mesura que arriben, sense límit temporal.
+
+
+* **Volum / Àmbit:** Finestres temporals o increments recents.
+
+
+* **Latència:** Baixa (milisegons a segons).
+
+
+* **Precisió:** Ràpida resposta, possiblement amb algun sacrifici de precisió o context.
+
+
+* **Casos d'ús:** Detecció de frau en temps real, alertes de sensors IoT, monitoratge d'usuaris actius.
+
+
 
 > **Nota:** *Temps Real* no implica immediatesa absoluta, sinó una resposta garantida dins d'un límit temporal molt petit (baixa latència).
 > 
