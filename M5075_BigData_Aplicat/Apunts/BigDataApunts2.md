@@ -2,8 +2,6 @@
 
 **Mòdul M5075 – Big Data Aplicat**
 
----
-
 ## 1. Introducció i Fonaments del Big Data
 
 ### Què és una Arquitectura de Big Data?
@@ -50,15 +48,15 @@ Qualsevol disseny distribuït en entorns Big Data ha de complir els principis se
 1. **Escalabilitat:** Capacitat d'incrementar el rendiment o la capacitat de processament i emmagatzematge segons creix la demanda.
 
 
-* *Escalat Vertical (Scale-up):* Afegir més CPU, memòria RAM o disc a un únic node. Té un límit físic i econòmic clar.
+* **Escalat Vertical (*Scale-up*):** Afegir més CPU, memòria RAM o disc a un únic node. Té un límit físic i econòmic clar.
 
 
-* *Escalat Horitzontal (Scale-out):* Afegir més nodes/servidors a un *cluster*. És la base de les arquitectures modernes de Big Data.
+* **Escalat Horitzontal (*Scale-out*):** Afegir més nodes/servidors a un *cluster*. És la base de les arquitectures modernes de Big Data.
 
 
 
 
-2. **Tolerància a Fallades (Fault Tolerance):** El sistema ha de mantenir-se operatiu i evadir la pèrdua de dades tot i que fallin servidors físics o processos ("*Everything fails, all the time*").
+2. **Tolerància a Fallades (*Fault Tolerance*):** El sistema ha de mantenir-se operatiu i evadir la pèrdua de dades tot i que fallin servidors físics o processos ("*Everything fails, all the time*").
 
 
 3. **Dades Distribuïdes:** La informació es reparteix entre diferents nodes per evitar el punt únic de fallada (*Single Point of Failure* o SPOF) i superar els límits d'un sol disc.
@@ -67,32 +65,32 @@ Qualsevol disseny distribuït en entorns Big Data ha de complir els principis se
 4. **Processament Distribuït:** Repartir el tractament de les dades de manera paral·lela entre diferents màquines per reduir els temps d'execució.
 
 
-5. **Localització de la Dada (Data Locality):** Apropar els processos de computació cap al node on hi ha emmagatzemada la dada. Evita el trànsit innecessari de xarxa que penalitza la latència.
+5. **Localització de la Dada (*Data Locality*):** Apropar els processos de computació cap al node on hi ha emmagatzemada la dada. Evita el trànsit innecessari de xarxa que penalitza la latència.
 
 
 
 ---
 
-### Principis WAF (Well-Architected Framework)
+### Principis WAF (*Well-Architected Framework*)
 
 A l'hora de dissenyar entorns *Cloud*, s'apliquen els pilars recomanats pels proveïdors (AWS, Azure) per evitar la sobreenginyeria:
 
-* **Excel·lència Operativa (Operational Excellence):** Executar i monitorar sistemes per aportar valor.
+* **Excel·lència Operativa (*Operational Excellence*):** Executar i monitorar sistemes per aportar valor.
 
 
-* **Seguretat (Security):** Aplicar el *principi de mínim privilegi* i model de responsabilitat compartida.
+* **Seguretat (*Security*):** Aplicar el *principi de mínim privilegi* i model de responsabilitat compartida.
 
 
-* **Fiabilitat (Reliability):** Planificar per a la recuperació davant de fallades, definint RTO (*Recovery Time Objective*) i RPO (*Recovery Point Objective*).
+* **Fiabilitat (*Reliability*):** Planificar per a la recuperació davant de fallades, definint RTO (*Recovery Time Objective*) i RPO (*Recovery Point Objective*).
 
 
-* **Eficiència del Rendiment (Performance Efficiency):** Utilitzar els recursos de manera optimitzada segons la demanda.
+* **Eficiència del Rendiment (*Performance Efficiency*):** Utilitzar els recursos de manera optimitzada segons la demanda.
 
 
-* **Optimització de Costos (Cost Optimization):** Reduir despeses innecessàries i apagar recursos no utilitzats.
+* **Optimització de Costos (*Cost Optimization*):** Reduir despeses innecessàries i apagar recursos no utilitzats.
 
 
-* **Sostenibilitat (Sustainability):** Minimitzar l'impacte ambiental de la infraestructura de computació.
+* **Sostenibilitat (*Sustainability*):** Minimitzar l'impacte ambiental de la infraestructura de computació.
 
 
 
@@ -174,7 +172,7 @@ Unified Log  │                                                    ▼
 * Les dades noves mai se sobreescriuen; s'afegeixen per preservar el llinatge/traçabilitat de la dada.
 
 
-* Executa algoritmes sobre tot el conjunt històric per generar les **Batch Views**. Proporciona la màxima precisió però amb alta latència.
+* Executa algorismes sobre tot el conjunt històric per generar les **Batch Views**. Proporciona la màxima precisió però amb alta latència.
 
 
 
@@ -189,7 +187,7 @@ Unified Log  │                                                    ▼
 
 
 3. **Serving Layer (Capa de servei):**
-* Indexa les vistes generated per la capa batch (*Batch Views*) per permetre consultes ràpides.
+* Indexa les vistes generades per la capa batch (*Batch Views*) per permetre consultes ràpides.
 
 
 * En respondre una consulta d'un client, combina la informació de la *Batch View* amb la *Real-time View* per donar una resposta completa i actualitzada.
@@ -200,13 +198,13 @@ Unified Log  │                                                    ▼
 
 ### Classificació per Temperatura de les Dades
 
-* **Calent (Hot):** Accés molt freqüent, emmagatzematge ràpid (RAM, SSD), cost elevat (ex. memòria cau, paginació).
+* **Calent (*Hot*):** Accés molt freqüent, emmagatzematge ràpid (RAM, SSD), cost elevat (ex. memòria cau, paginació).
 
 
-* **Tebi (Warm):** Accés poc freqüent, cost mitjà (ex. generació de nòmines, informes mensuals).
+* **Tebi (*Warm*):** Accés poc freqüent, cost mitjà (ex. generació de nòmines, informes mensuals).
 
 
-* **Fred (Cold):** Accés molt poc freqüent, cost d'emmagatzematge molt baix i alta latència de recuperació (ex. *backups*, còpies de seguretat en cinta o Glacier).
+* **Fred (*Cold*):** Accés molt poc freqüent, cost d'emmagatzematge molt baix i alta latència de recuperació (ex. *backups*, còpies de seguretat en cinta o Glacier).
 
 
 
@@ -238,7 +236,7 @@ Input Topic               │ │  Job Version n       │ ┼───> │ Out
 2. **Dades Immutables:** Les dades d'origen no es modifiquen mai. S'emmagatzemen com un registre d'esdeveniments (*Log*) ordenat.
 
 
-3. **Un Únic Flux de Processament:** Es manté un sol codi i una única lògica basant-se en engines de streaming (ex. Apache Kafka + Apache Flink / Spark Streaming).
+3. **Un Únic Flux de Processament:** Es manté un sol codi i una única lògica basant-se en motors de streaming (ex. Apache Kafka + Apache Flink / Spark Streaming).
 
 
 4. **Capacitat de Reprocessament:** Si la lògica canvia, no es modifiquen les dades d'origen; simplement es torna a llegir el *Log* des de l'inici (*replay*) amb la nova versió de l'algorisme.
@@ -284,7 +282,7 @@ $$\text{Data Lake (Fitxers no estructurats/Parquet)} + \text{Capacitats de gesti
 
 ---
 
-## 7. Arquitectura per Capes (Layered Architecture)
+## 7. Arquitectura per Capes (*Layered Architecture*)
 
 Permet estructurar funcionalment el cicle de vida complet de la dada en 6 capes independents:
 
@@ -319,7 +317,7 @@ Permet estructurar funcionalment el cicle de vida complet de la dada en 6 capes 
 
 ## 8. El Principi SCV (Speed, Consistency, Volume)
 
-Analogament al Teorema CAP aplicat a bases de dades NoSQL, el **Principi SCV** s'aplica al processament distribuït de la dada. Establix que un sistema analític distribuït només pot assegurar, com a màxim, **2 de les 3** propietats següents:
+Analogament al Teorema CAP aplicat a bases de dades NoSQL, el **Principi SCV** s'aplica al processament distribuït de la dada. Estableix que un sistema analític distribuït només pot assegurar, com a màxim, **2 de les 3** propietats següents:
 
 * **Speed (Velocitat):** Rapidesa en l'execució de l'algorisme des que la dada entra al sistema.
 
