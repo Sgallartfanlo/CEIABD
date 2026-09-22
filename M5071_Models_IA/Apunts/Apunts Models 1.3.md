@@ -1,9 +1,6 @@
 # Tema 1.3: Intel·ligència Artificial Generativa (GenAI)
 
 **Mòdul:** M5071 - Models d'Intel·ligència Artificial  
-**Professor:** Miquel Floriach (`mfloriach@sapalomera.cat`)  
-**Centre:** Institut Sa Palomera  
-
 ---
 
 ## 1. Per què parlem ara d'IA Generativa (GenAI)?
