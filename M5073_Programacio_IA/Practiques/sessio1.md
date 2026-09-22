@@ -255,7 +255,3 @@ while opcio != 6:
         print("Error: Introdueix un número enter vàlid.")
 
 ```
-
-```
-
-```
