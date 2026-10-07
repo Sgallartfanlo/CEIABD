@@ -1,8 +1,5 @@
 # M5071 - Models d'Intel·ligència Artificial
 ## T1.4. Riscos ètics, socials i legals
-**Professor:** Miquel Floriach (Institut Sa Palomera)  
-**Llicència:** CC BY-SA (Adaptat a partir dels materials de Francesc Barragan i anteriors professors)
-
 ---
 
 ## 1. Introducció a l'Ètica de la Intel·ligència Artificial
