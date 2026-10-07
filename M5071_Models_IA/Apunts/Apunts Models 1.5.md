@@ -1,9 +1,6 @@
 # T1.5. IA fiable i marc legal
 
 **Mòdul:** M5071 - Models d'Intel·ligència Artificial  
-**Professor:** Miquel Floriach (`mfloriach@sapalomera.cat`)  
-**Llicència:** Reconeixement-CompartirIgual 4.0 Internacional (CC BY-SA)
-
 ---
 
 ## 1. Introducció a la IA Fiable
