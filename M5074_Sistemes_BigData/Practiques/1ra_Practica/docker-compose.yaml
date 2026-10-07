@@ -1,0 +1,54 @@
+# =====================================================================
+#  SQL Server 2025 (17.x) sobre contenidor Linux (imatge Ubuntu)
+#  Requereix: Docker Engine amb Docker Compose V2 (ordre `docker compose`)
+#  Nota: no s'inclou la clau `version:` perquè és obsoleta a Compose V2.
+# =====================================================================
+
+name: sqlserver2025
+
+services:
+  sqlserver:
+    # Imatge oficial de Microsoft (MCR).
+    # - 2025-latest  -> sempre l'última CU de SQL Server 2025.
+    # - Per a entorns reproduïbles (aula, exàmens) fixeu un tag concret,
+    #   p. ex. 2025-CU8-ubuntu-24.04 (comproveu els tags disponibles a MCR).
+    image: mcr.microsoft.com/mssql/server:${MSSQL_TAG:-2025-latest}
+    container_name: sql2025
+    hostname: sql2025
+    restart: unless-stopped
+
+    environment:
+      # Obligatori: acceptar la llicència (EULA)
+      ACCEPT_EULA: "Y"
+      # Contrasenya de 'sa' (SA_PASSWORD està obsoleta; cal MSSQL_SA_PASSWORD)
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?Cal definir MSSQL_SA_PASSWORD al fitxer .env}
+      # Edició. Per a 2025, valors gratuïts no productius:
+      #   EnterpriseDeveloper | StandardDeveloper | Express | Evaluation
+      MSSQL_PID: ${MSSQL_PID:-EnterpriseDeveloper}
+      # Habilita l'SQL Server Agent (per defecte està desactivat)
+      MSSQL_AGENT_ENABLED: "true"
+      # Intercalació per defecte de la instància
+      MSSQL_COLLATION: ${MSSQL_COLLATION:-SQL_Latin1_General_CP1_CI_AS}
+      # Límit de memòria per a SQL Server (MB). Mínim recomanat: 2 GB
+      MSSQL_MEMORY_LIMIT_MB: ${MSSQL_MEMORY_LIMIT_MB:-2048}
+
+    ports:
+      # host:contenidor -> es pot canviar el port de l'amfitrió al .env
+      - "${MSSQL_HOST_PORT:-1433}:1433"
+
+    volumes:
+      # Volum amb nom: dades, logs i còpies de seguretat persisteixen
+      # encara que s'elimini el contenidor.
+      - mssql_data:/var/opt/mssql
+
+    healthcheck:
+      # sqlcmd (mssql-tools18) dins la imatge; -C = confiar en el certificat
+      # autosignat del servidor (ODBC 18 xifra per defecte).
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$${MSSQL_SA_PASSWORD}\" -C -Q 'SELECT 1' -b -o /dev/null"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+
+volumes:
+  mssql_data:
