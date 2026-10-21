@@ -1,8 +1,4 @@
 # Tema 2.1: Estructures Abstractes de Dades (TAD)
-**Mòdul:** M5071 - Models d'Intel·ligència Artificial  
-**Centre:** Institut Sa Palomera  
-**Professor:** Miquel Floriach (adaptació de materials de F. Barragan i Univ. de Berkeley, Llicència CC BY-SA)
-
 ---
 
 ## 1. Introducció a la Resolució de Problemes i la IA
