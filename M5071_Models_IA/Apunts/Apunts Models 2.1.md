@@ -1,5 +1,4 @@
 # Tema 2.1: Estructures Abstractes de Dades (TAD)
----
 
 ## 1. Introducció a la Resolució de Problemes i la IA
 
