@@ -1,13 +1,6 @@
 # M05075 - BigData Aplicat
 ## Activitat 2: Primers passos amb Hadoop
 
-* **Nom de l'alumnat:** Sergi Gallart Fanlo
-* **Professor:** Joan Pou
-* **Curs:** 2026/2027
-* **Centre:** Institut Sa Palomera (CE IA&BD)
-
----
-
 ## Taula de Continguts
 1. [Estimació del número Pi amb MapReduce](#1-estimació-del-número-pi-amb-mapreduce)
 2. [Comptador de paraules de "Tirant lo Blanc" amb Python i Hadoop Streaming](#2-comptador-de-paraules-de-tirant-lo-blanc-amb-python-i-hadoop-streaming)
