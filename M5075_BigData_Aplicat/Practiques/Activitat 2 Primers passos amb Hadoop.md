@@ -1,11 +1,5 @@
 # M05075 - BigData Aplicat
 ## Activitat 2: Primers passos amb Hadoop
-
-* **Nom de l'alumnat:** Sergi Gallart Fanlo
-* **Professor:** Joan Pou
-* **Curs:** 2026/2027
-* **Centre:** Institut Sa Palomera (CE IA&BD)
-
 ---
 
 ## Taula de Continguts
