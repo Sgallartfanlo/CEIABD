@@ -1,15 +1,5 @@
 # Activitat 0: Emmagatzematge NoSQL, Teorema CAP i Moviment NewSQL
 
-> **Mòdul:** M5074 Sistemes de Big Data  
-> **Unitat Formativa / Tema:** Emmagatzematge NoSQL i Nous Paradigmes  
-> **Cicle Formatiu:** Curs d'Especialització en IA & BD (ASIX / DAW / DAM)  
-> **Centre:** Institut Sa Palomera (Generalitat de Catalunya — Departament d'Educació i FP)  
-> **Curs Acadèmic:** 2026/2027  
-> **Autor de la pràctica:** Sergi Gallart Fanlo  
-> **Professor:** Francesc Barragán  
-
----
-
 ## Taula de Continguts
 1. [Resum Executiu i Objectius](#1-resum-executiu-i-objectius)
 2. [Part 1: Preguntes i Conceptes Fonamentals NoSQL](#2-part-1-preguntes-i-conceptes-fonamentals-nosql)
