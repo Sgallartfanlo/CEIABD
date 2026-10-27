@@ -2,13 +2,6 @@
 
 ## Activitat 3: Gestió i Administració d'HDFS
 
-* **Nom de l'alumnat:** Sergi Gallart Fanlo
-* **Professor:** Joan Pou
-* **Curs:** 2026/2027
-* **Centre:** Institut Sa Palomera (CE IA&BD)
-
----
-
 ## Taula de Continguts
 
 1. [Comandes bàsiques en HDFS](#1-comandes-bàsiques-en-hdfs)
