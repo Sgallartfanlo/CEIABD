@@ -1,14 +1,5 @@
 # MongoDB: Introducció i Operacions CRUD amb `mongosh`
 
-> **Mòdul:** M5074 Sistemes de Big Data NoSQL  
-> **Cicle Formatiu:** Curs d'Especialització en IA & BD (ASIX / DAW / DAM)  
-> **Centre:** Institut Sa Palomera  
-> **Curs acadèmic:** 2026/2027  
-> **Autor:** Francesc Barragán Pascual  
-> **Llicència:** CC BY-NC-SA  
-
----
-
 ## Taula de Continguts
 1. [Objectius del Curs](#1-objectius-del-curs)
 2. [Què és MongoDB?](#2-què-és-mongodb)
