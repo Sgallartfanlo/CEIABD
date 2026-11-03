@@ -27,6 +27,5 @@ pip install -r requirements.txt
 ## 3. Executar l'aplicació
 
 ```bash
-python main.py
+python Activitat_2-Sergi_Gallart.py
 ```
-*(o el fitxer principal corresponent)*
