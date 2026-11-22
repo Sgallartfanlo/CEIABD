@@ -1,9 +1,5 @@
 # Apache Sqoop — Apunts extensos
 
-> **M5075 · Big Data Aplicat · NF1.3**  
-> Basat en el document *Sqoop*, de Francesc Barragán Pascual (revisió del 04/02/2026, 28 pàgines).  
-> **Objectiu:** entendre els conceptes i poder reproduir els casos pràctics en la màquina virtual de classe.
-
 ## Índex
 
 1. [Introducció i paper dins de Big Data](#1-introducció-i-paper-dins-de-big-data)
