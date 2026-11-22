@@ -1,9 +1,5 @@
 # Apache Flume — Apunts extensos d'instal·lació
 
-> **M5075 — Big Data Aplicat · NF1 · Activitat 5a**  
-> **Document de base:** *Instal·lació de Flume* (2 pàgines).  
-> **Idioma:** català · **Format:** Markdown · **Objectiu:** estudiar i reproduir amb criteri la instal·lació.
-
 ## Com utilitzar aquests apunts
 
 La guia original és molt breu i consta de dues pàgines. Aquests apunts **reprodueixen tots els passos i les comandes de la guia**, n'expliquen el significat i hi afegeixen comprovacions, bones pràctiques, diagnòstic d'errors i exercicis d'autoavaluació. Per distingir l'origen del contingut:
