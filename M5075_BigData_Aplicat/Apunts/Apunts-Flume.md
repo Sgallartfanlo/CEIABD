@@ -1,6 +1,5 @@
 # APUNTS EXTENSOS — APACHE FLUME
 
----
 # 1. Introducció a Apache Flume
 
 ## 1.1. Què és?
