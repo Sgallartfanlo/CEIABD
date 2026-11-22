@@ -1,12 +1,5 @@
 # APUNTS EXTENSOS — APACHE FLUME
 
-**Mòdul:** M5075 · Big Data Aplicat  
-**Unitat:** NF1 · Apache Flume  
-**Document de referència:** `M5075_NF1_4_DOC00_Flume.pdf` (26 pàgines; revisió del 04/02/2026)  
-**Objectiu:** entendre l'arquitectura de Flume i saber configurar, executar, comprovar i explicar tots els casos del dossier.
-
-> **Sobre aquests apunts:** segueixen el contingut i els exemples del PDF. Les explicacions addicionals serveixen per estudiar-los millor i estan marcades, quan és rellevant, com a *nota d'estudi*. També s'assenyalen errades tipogràfiques o incoherències internes del document perquè no les copiïs inadvertidament.
-
 ---
 
 ## Índex
