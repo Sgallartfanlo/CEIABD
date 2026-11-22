@@ -1,11 +1,5 @@
 # Apunts extensos — Instal·lació d'Apache Hadoop 3.4.3 a Ubuntu 22.04
 
-> **M5075 — Big Data Aplicat · NF1 · Activitat 1**  
-> **Document de referència:** *Guia d'instal·lació de Hadoop amb Ubuntu 22.04* (27 pàgines).  
-> **Objectiu:** entendre, executar, comprovar i diagnosticar una instal·lació de Hadoop en **mode pseudodistribuït**.
-
-**Com llegir aquests apunts:** els blocs **«Segons la guia»** reprodueixen el procediment de classe, mentre que els apartats **«Ampliació»**, **«Precaució»** i **«Diagnòstic»** afegeixen explicacions i comprovacions per estudiar o solucionar problemes. Les adreces, els usuaris i les rutes són els exemples de la guia: adapta'ls al teu ordinador.
-
 ---
 
 ## Índex
