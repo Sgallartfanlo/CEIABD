@@ -1,45 +1,5 @@
 # Apunts extensos — Apache Hadoop YARN
 
-**M5075 — Big Data Aplicat · NF1.2 · YARN**  
-**Document base:** `M5075_NF1_2_DOC01B_YARN_Resum.pdf` (3 pàgines).  
-**Idioma:** català · **Objectiu:** estudiar la teoria, entendre els esquemes i preparar pràctiques i exàmens.
-
-> **Com llegir aquests apunts:** els apartats identificats com a **[GUIA]** desenvolupen els conceptes i els esquemes que apareixen al PDF. Els apartats **[AMPLIACIÓ]** afegeixen exemples, ordres, comparatives i matisos per ajudar a estudiar. No s'ha d'atribuir automàticament aquest material complementari al PDF original.
-
-## Índex
-
-1. Què és YARN i per què serveix
-2. Context històric: Hadoop 1 i Hadoop 2
-3. Gestió de recursos vs. processament de dades
-4. Els quatre elements de l'arquitectura
-5. ResourceManager en profunditat
-6. ApplicationMaster en profunditat
-7. NodeManager en profunditat
-8. Contenidors YARN
-9. Visió completa de l'arquitectura
-10. Interpretació del diagrama de la pàgina 1
-11. Execució d'un job: versió resumida del PDF
-12. Execució d'un job: seqüència detallada
-13. Interpretació del diagrama de la pàgina 2
-14. Interpretació del diagrama de la pàgina 3
-15. Com es relacionen ResourceManager, NodeManager i ApplicationMaster
-16. Relació entre YARN, HDFS i MapReduce
-17. Recursos, planificació i concurrència
-18. Situacions de fallada i recuperació
-19. Exemple pràctic conceptual
-20. Ordres bàsiques de YARN
-21. Interfície web i monitoratge
-22. Configuració habitual
-23. Exemples de diagnòstic
-24. Diferències i confusions freqüents
-25. Comparatives per memoritzar
-26. Exercicis pràctics proposats i resolts
-27. Preguntes tipus examen amb resposta
-28. Glossari
-29. Resum final i checklist
-
----
-
 ## 1. Què és YARN i per què serveix [GUIA]
 
 **YARN** són les sigles de **Yet Another Resource Negotiator**. És el sistema de gestió de recursos de Hadoop, encarregat de coordinar els recursos computacionals disponibles en un clúster i repartir-los entre les aplicacions que els necessiten.
