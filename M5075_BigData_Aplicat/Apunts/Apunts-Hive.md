@@ -1,9 +1,5 @@
 # Apache Hive I — Apunts extensos
 
-> **M5075 · Big Data Aplicat · NF1.5**  
-> Material de referència: *Hive*, Francesc Barragán Pascual, revisió del 09/02/2026 (52 pàgines).  
-> Apunts d'estudi en català, reorganitzats i ampliats pedagògicament a partir del document de classe.
-
 ## Índex
 
 1. [Introducció a Hive](#1-introducció-a-hive)
