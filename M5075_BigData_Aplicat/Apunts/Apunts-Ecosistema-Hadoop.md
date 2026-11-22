@@ -1,42 +1,5 @@
 # APUNTS EXTENSOS — ECOSISTEMA HADOOP
 
-## Índex
-
-1. Objectius d'aprenentatge
-2. Visió general de l'ecosistema Hadoop
-3. Mapa de les quatre famílies de components
-4. Accés i processament de dades
-5. Apache Pig
-6. Apache Hive
-7. Apache Impala
-8. Apache HBase
-9. Apache Phoenix
-10. Apache Spark
-11. Ingesta de dades i fluxos de treball
-12. Apache Sqoop
-13. Apache Flume
-14. Apache Oozie
-15. Interfícies i eines de treball
-16. Apache Hue
-17. Apache Zeppelin
-18. Apache Ambari
-19. Cloudera Manager
-20. Processament en streaming
-21. Apache Kafka
-22. Apache Flink
-23. Apache Storm
-24. Comparatives i criteris de selecció
-25. Arquitectures d'exemple i fluxos de dades
-26. Conceptes transversals (batch, streaming, SQL, NoSQL)
-27. Exemples pràctics il·lustratius
-28. Errors habituals i confusions d'examen
-29. Glossari
-30. Preguntes d'autoavaluació amb resposta
-31. Exercicis de raonament resolts
-32. Resum final i checklist
-
----
-
 ## 1. Objectius d'aprenentatge [AMPLIACIÓ]
 
 En acabar aquests apunts hauries de ser capaç de:
