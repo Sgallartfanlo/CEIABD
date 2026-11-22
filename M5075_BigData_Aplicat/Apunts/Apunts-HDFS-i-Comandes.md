@@ -1,41 +1,5 @@
 # Apache Hadoop HDFS — Apunts extensos i guia d'administració
 
-> **M5075 · Big Data Aplicat · NF1**  
-> **Documents de base:** *M5075_NF1_1_DOC01_HDFS* (26 pàgines; revisió 29/01/2026) i *M5075_NF1_1_DOC02_Comandes bàsiques administració HDFS* (2 pàgines).  
-> **Objectiu:** entendre l'arquitectura i el funcionament d'HDFS i saber utilitzar i interpretar les comandes del temari.  
-> **Convenció:** els apartats «Ampliació» afegeixen explicacions didàctiques; els apartats «Nota de revisió» identifiquen detalls dels documents que cal comprovar abans de copiar-los a la pràctica.
-
----
-
-## Índex
-
-1. Què és HDFS i per a què serveix
-2. Arquitectura i components: NameNode, DataNode i Secondary NameNode
-3. Comandes i sistemes de fitxers: `hdfs dfs` i `hadoop fs`
-4. Rutes, permisos i operacions bàsiques
-5. Metadades, FsImage, EditLog i checkpoints
-6. Blocs, mida i replicació
-7. Procés de lectura detallat
-8. Procés d'escriptura detallat
-9. Integritat, errors i recuperació
-10. Administració del clúster i diagnòstic
-11. Instantànies o snapshots
-12. Interfície web HDFS i permisos
-13. Accés a HDFS des de Python
-14. Hue i altres interfícies
-15. Guia completa de comandes, per categories
-16. Pràctica guiada: administració bàsica
-17. Pràctica guiada: blocs i FSCK
-18. Pràctica guiada: snapshots i recuperació
-19. Errors habituals, bones pràctiques i precaucions
-20. Comparatives per memoritzar
-21. Glossari
-22. Preguntes d'autoavaluació amb resposta
-23. Exercicis pràctics resolts
-24. Checklist d'estudi i resum exprés
-
----
-
 ## 1. Què és HDFS i per a què serveix
 
 **HDFS** (*Hadoop Distributed File System*) és el sistema de fitxers distribuït de l'ecosistema Apache Hadoop. La seva finalitat és emmagatzemar fitxers grans en diversos equips d'un clúster i fer que l'usuari els pugui gestionar com si formessin un sistema de fitxers únic. Un fitxer lògic pot estar físicament repartit en diversos **blocs** guardats en diferents **DataNodes**.
