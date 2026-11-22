@@ -1,40 +1,5 @@
 # Apunts extensos — Instal·lació d'Apache Hadoop 3.4.3 a Ubuntu 22.04
 
----
-
-## Índex
-
-1. Objectius i mapa general de la instal·lació
-2. Què és Hadoop i per a què serveix?
-3. Arquitectura i components de Hadoop
-4. Modes d'execució: local, pseudodistribuït i distribuït
-5. Requisits previs i planificació
-6. Instal·lació de Java/OpenJDK
-7. SSH, usuari de servei i accés sense contrasenya
-8. Descàrrega i instal·lació d'Hadoop 3.4.3
-9. Variables d'entorn i configuració de Java
-10. Fitxers XML principals d'Hadoop
-11. Configuració de `core-site.xml`
-12. Preparació del NameNode i del DataNode
-13. Configuració de `hdfs-site.xml`
-14. Formatatge inicial del NameNode: significat i riscos
-15. Arrencada i comprovació d'HDFS
-16. Configuració de MapReduce amb YARN
-17. Configuració i arrencada de YARN
-18. Interfícies web i ports
-19. Proves pràctiques d'HDFS i de MapReduce
-20. Errors habituals i resolució d'incidències
-21. Ordre correcte d'instal·lació, arrencada i aturada
-22. Seguretat i bones pràctiques
-23. Comparatives i resum de configuració
-24. Exercici pràctic complet amb verificació
-25. 60 preguntes d'autoavaluació amb resposta
-26. Glossari
-27. Repàs exprés i checklist final
-28. Referències i notes sobre la guia
-
----
-
 ## 1. Objectius i mapa general de la instal·lació
 
 La guia planteja desplegar **Hadoop 3.4.3 sobre Ubuntu 22.04**, en una única màquina que simula un entorn distribuït. En acabar, aquesta màquina executarà diversos dimonis Java independents que ofereixen emmagatzematge distribuït (HDFS) i gestió de recursos (YARN).
