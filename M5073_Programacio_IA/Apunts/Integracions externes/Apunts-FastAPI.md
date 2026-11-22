@@ -1,40 +1,6 @@
 # APUNTS EXTENSOS — FastAPI, Pydantic, Pandas i API del Titanic
 ---
 
-## Índex
-
-1. Objectiu i mapa conceptual
-2. Què és una API REST i què és FastAPI?
-3. HTTP, JSON, rutes i codis de resposta
-4. Eines del projecte: Python, `uv`, Pandas, NumPy i Pydantic
-5. Instal·lació de FastAPI a Windows amb `uv`
-6. Primera API: rutes i paràmetres
-7. Proves amb navegador i documentació automàtica
-8. Del primer exemple al projecte Titanic
-9. Dataset `titanic3.csv` i càrrega amb Pandas
-10. Valors nuls i serialització JSON
-11. Inicialització i metadades de l'API Titanic
-12. Model `PassatgerCreate` amb Pydantic
-13. `GET /passatgers`: filtres i paginació
-14. `GET /passatgers/{passatger_id}`: rutes i errors
-15. `GET /estadistiques`: analítica amb Pandas
-16. `POST /passatgers`: inserció de passatgers
-17. `DELETE /passatgers/{passatger_id}`: eliminació
-18. Resum de tots els endpoints
-19. Flux complet d'una petició HTTP
-20. Codi de referència de l'API del Titanic
-21. Execució local i comprovacions
-22. Exemples de peticions i respostes
-23. Errors habituals i diagnosi
-24. Limitacions del codi original i millores possibles
-25. Exercicis pràctics guiats
-26. Comparatives per a l'examen
-27. 60 preguntes d'autoavaluació amb resposta
-28. Glossari
-29. Checklist final
-
----
-
 ## 1. Objectiu i mapa conceptual
 
 Els dos fitxers expliquen una progressió natural: **crear una API mínima amb FastAPI** i, després, **construir una API de consulta i gestió de dades del Titanic**. La primera guia mostra com preparar un projecte amb `uv`, crear `FastAPI()` i definir tres rutes. La segona introdueix un CSV, un `DataFrame`, models de validació, filtres, paginació, estadístiques i operacions d'escriptura.
