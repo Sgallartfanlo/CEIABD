@@ -1,13 +1,5 @@
 # APUNTS EXTENSOS — ECOSISTEMA HADOOP
 
-**M5075 — Big Data Aplicat · NF1**  
-**Document base:** `M5075_NF1_1_DOC02_Ecosistema_Hadoop.docx.pdf` (1 pàgina)  
-**Idioma:** català · **Format:** Markdown
-
-> **Com llegir aquests apunts.** Els apartats marcats com a **[GUIA]** recullen la classificació i les eines que apareixen al PDF de classe. Els apartats marcats **[AMPLIACIÓ]** desenvolupen conceptes, exemples i comparatives per estudiar i comprendre millor el temari: no són transcripcions ni afirmacions que el PDF expliqui amb aquest detall. Els exemples de codi són didàctics i poden requerir instal·lació, configuració o adaptacions de versió.
-
----
-
 ## Índex
 
 1. Objectius d'aprenentatge
