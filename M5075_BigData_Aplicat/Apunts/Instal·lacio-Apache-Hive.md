@@ -1,51 +1,5 @@
 # Apache Hive 3.1.3 — Instal·lació i configuració a Hadoop
 
-> **M5075 · Big Data Aplicat · Tema 2 · Activitat 6**  
-> **Format:** apunts extensos en català, basats en la guia «Instal·lació de Hive_v02» (9 pàgines).  
-> **Entorn de referència de la guia:** usuari `hadoop`, instal·lació a `/home/hadoop/hive`, Hadoop a `/home/hadoop/hadoop`, MariaDB/MySQL, Sqoop, Hue i Hive 3.1.3.  
-> **Criteri de lectura:** 🟦 **[GUIA]** identifica passos que apareixen al document; 🟩 **[AMPLIACIÓ]** aporta explicacions i exercicis afegits; ⚠️ **[PRECAUCIÓ]** remarca compatibilitat, seguretat o errors que cal validar.
-
----
-
-## Índex
-
-1. Objectius i context de la instal·lació
-2. Què és Hive i on encaixa dins de Hadoop
-3. Components: Hive CLI, Metastore, HiveServer2 i Beeline
-4. Visió general del procediment
-5. Preparació de l'entorn i comprovacions prèvies
-6. Descàrrega de Hive 3.1.3
-7. Descompressió i organització de directoris
-8. Variables d'entorn del terminal
-9. Fitxers de configuració de Hive
-10. Configuració de `hive-env.sh`
-11. Integració amb Sqoop
-12. Preparació dels directoris HDFS
-13. Compatibilitat de llibreries: Guava
-14. Configuració de proxyusers a Hadoop
-15. Configuració de Hue
-16. Execució de Hue amb Docker
-17. Configuració del fitxer `hive-site.xml`
-18. Preparació de MariaDB com a Metastore
-19. Connector JDBC MySQL
-20. Inicialització de l'esquema amb `schematool`
-21. Arrencada del Metastore
-22. Hive CLI: ús i limitacions
-23. Arrencada de HiveServer2
-24. Connexió amb Beeline
-25. Flux complet d'una consulta
-26. Pràctica de comprovació de la instal·lació
-27. Ports, processos i fitxers clau
-28. Problemes freqüents i diagnòstic
-29. Seguretat, permisos i precaucions
-30. Checklist i seqüència recomanada
-31. 55 preguntes d'autoavaluació resoltes
-32. Exercicis pràctics amb solució
-33. Glossari i resum de memòria
-34. Referències al document original
-
----
-
 ## 1. Objectius i context de la instal·lació
 
 **[GUIA]** L'activitat ensenya a instal·lar Apache Hive 3.1.3 i integrar-lo amb un entorn Hadoop ja existent, configurar els serveis, emmagatzemar les metadades en una base de dades MySQL/MariaDB i connectar-hi clients. També inclou la integració amb Sqoop i la configuració de Hue, amb opció de desplegar-lo en un contenidor Docker.
