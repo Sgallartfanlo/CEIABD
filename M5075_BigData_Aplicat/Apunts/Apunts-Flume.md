@@ -1,33 +1,6 @@
 # APUNTS EXTENSOS — APACHE FLUME
 
 ---
-
-## Índex
-
-1. Introducció a Apache Flume
-2. Alternatives a Flume
-3. Instal·lació i entorn de treball
-4. Arquitectura i funcionament intern
-5. Agents, esdeveniments i transaccions
-6. Tipus de sources, channels i sinks
-7. Sintaxi i estructura dels fitxers `.conf`
-8. Pràctica inicial: ExecLoggerAgent
-9. Cas 1a: generació seqüencial i persistència a HDFS
-10. Cas 1b: Netcat, FileChannel i HDFS
-11. Fitxers HDFS i criteris de rotació
-12. Cas 2: fluxos encadenats amb Avro
-13. Cas 3: múltiples orígens i consolidació
-14. Directoris de dades i checkpoints
-15. Interceptors: timestamp, host i regex
-16. Comandes essencials i comprovacions
-17. Comparativa dels casos pràctics
-18. Errors habituals i resolució de problemes
-19. Preguntes de repàs amb respostes
-20. Resum final i glossari
-21. Referències
-
----
-
 # 1. Introducció a Apache Flume
 
 ## 1.1. Què és?
